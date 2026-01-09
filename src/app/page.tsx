@@ -146,6 +146,11 @@ export default function ShopPage(){
           name="Sepatu Nike Air"
           price="Rp 1.500.000"
         />
+        <ProductCard
+          image="/img1.jpg"
+          name="Sepatu Nike Air"
+          price="Rp 1.500.000"
+        />
       </div>
     </main>
   )
