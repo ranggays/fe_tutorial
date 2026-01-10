@@ -49,7 +49,7 @@ export default function ProductCard(props: ProductCardProps){
                                 -
                             </button>
                             <span className="font-bold text-slate-800">{qty}</span>
-                            <button onClick={() => setQty(qty + 1)} className="w-10 h-8 flex items-center justify-center bg-white rounded shadow-sm hover:bg-green-50 text-green-600 font-bold">
+                            <button onClick={() => setQty(qty + 1)} disabled={qty >= 10} className={`w-10 h-8 flex items-center justify-center bg-white rounded shadow-sm hover:bg-green-50 ${qty >= 10 ? "text-gray-400 font-bold cursor-not-allowed" : "text-green-600 font-bold"}`}>
                                 +
                             </button>
                         </div>
