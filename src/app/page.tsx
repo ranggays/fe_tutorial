@@ -143,12 +143,12 @@ export default function ShopPage(){
         />
         <ProductCard
           image="/img1.jpg"
-          name="Sepatu Nike Air"
+          name="Kemeja Casual"
           price="Rp 1.500.000"
         />
         <ProductCard
           image="/img1.jpg"
-          name="Sepatu Nike Air"
+          name="Jam Tangan"
           price="Rp 1.500.000"
         />
       </div>
