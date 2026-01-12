@@ -6,27 +6,31 @@ export default function Navbar(){
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
     return(
-        <nav className="relative bg-slate-50 text-black p-6 ">
+        <nav className=" bg-slate-50 text-black p-6 ">
           <div className="flex flex-row justify-between items-center">
+            
             <div>
-              <h1 className="tracking-tight font-medium text-lg font-mono">Area</h1>
+              <h1 className="hidden sm:flex tracking-tight font-serif text-black text-lg">Area</h1>
             </div>
-            <div className="hidden sm:flex flex-row gap-2 w-max text-sm font-light fixed top-7 left-1/2 -translate-x-1/2 z-10 rounded-2xl  backdrop-blur-2xl p-2">
-              <a className="hover:font-bold" href="#">Benefits</a>
+            <div className="hidden sm:flex flex-row gap-2 w-max text-sm font-light fixed top-7 left-1/2 -translate-x-1/2 z-10 rounded-2xl  backdrop-blur-2xl p-2 font-serif text-black tracking-tighter">
+              <a className="hover:text-green-600" href="#">Benefits</a>
               <a href="#">Spesifications</a>
               <a href="#">How-to</a>
               <a href="#">Contact Us</a>
             </div>
 
-            <div className="hidden sm:flex bg-green-500 rounded-lg p-2">
-              <button className="text-sm font-extralight hover:font-extralight cursor-pointer">Learn More</button>
+            <div className="hidden sm:flex bg-[#8FA877] rounded-lg p-2">
+              <button className="text-sm font-serif tracking-tighter hover:font-extralight cursor-pointer">Learn More</button>
               <span></span>
             </div>
 
-            <div className="sm:hidden fixed top-7 right-6">
+            <div className="sm:hidden fixed w-full p-4 backdrop-blur-lg shadow-lg z-100 rounded-lg top-0 left-0">
+              <div className="flex flex-row justify-between items-center">
+                <h1 className="tracking-tight font-medium text-lg font-mono">Area</h1>
                 <button onClick={() => setIsOpen(!isOpen)}>
-                    <span>{isOpen ? "X" : "☰"}</span>
+                    <span className="cursor-pointer">{isOpen ? "X" : "☰"}</span>
                 </button>
+              </div>
             </div>
 
             { isOpen && (
