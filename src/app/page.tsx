@@ -136,6 +136,17 @@ export default function ShopPage(){
   return(
     <>  
       <Navbar />
+      <section className="flex flex-col bg-slate-50 items-center pt-16 md:pt-24 px-4 overflow-hidden">
+        <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif text-black mb-12 md:mb-20 tracking-tighter">Browse everything</h1>
+        <div className="relative w-full max-w-7xl mx-auto">
+          <div className="absolute bottom-0 w-full h-[80%] bg-[#8FA877] rounded-[2.5rem] md:rounded-[4rem] z-0"></div>
+          <div className="relative z-10 flex justify-center pt-10 md:pt-16 px-6 pb-0">
+            <div className="bg-black p-2 md:p-3 rounded-4xl shadow-2xl">
+              <img src="/tablet-image.jpg" alt="Dashboard" className="rounded-[1.5rem] w-full max-w-5xl h-auto object-cover border border-gray-800"/>
+            </div>
+          </div>
+        </div>
+      </section>
       <main className="min-h-screen bg-slate-50 p-10 flex flex-col items-center gap-8">
         <h1 className="text-3xl font-bold text-slate-900">Katalog Produk</h1>
         <div className="flex flex-row gap-8">
