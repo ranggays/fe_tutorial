@@ -130,28 +130,32 @@
 // }
 
 import ProductCard from "../components/ProductCard";
+import Navbar from "../components/Navbar";
 
 export default function ShopPage(){
   return(
-    <main className="min-h-screen bg-slate-50 p-10 flex flex-col items-center gap-8">
-      <h1 className="text-3xl font-bold text-slate-900">Katalog Produk</h1>
-      <div className="flex flex-row gap-8">
-        <ProductCard
-          image="/img1.jpg"
-          name="Sepatu Nike Air"
-          price="Rp 1.500.000"
-        />
-        <ProductCard
-          image="/img1.jpg"
-          name="Kemeja Casual"
-          price="Rp 1.500.000"
-        />
-        <ProductCard
-          image="/img1.jpg"
-          name="Jam Tangan"
-          price="Rp 1.500.000"
-        />
-      </div>
-    </main>
+    <>  
+      <Navbar />
+      <main className="min-h-screen bg-slate-50 p-10 flex flex-col items-center gap-8">
+        <h1 className="text-3xl font-bold text-slate-900">Katalog Produk</h1>
+        <div className="flex flex-row gap-8">
+          <ProductCard
+            image="/img1.jpg"
+            name="Sepatu Nike Air"
+            price="Rp 1.500.000"
+          />
+          <ProductCard
+            image="/img1.jpg"
+            name="Kemeja Casual"
+            price="Rp 1.500.000"
+          />
+          <ProductCard
+            image="/img1.jpg"
+            name="Jam Tangan"
+            price="Rp 1.500.000"
+          />
+        </div>
+      </main>
+    </>
   )
 }
