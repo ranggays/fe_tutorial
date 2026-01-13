@@ -136,19 +136,47 @@ export default function ShopPage(){
   return(
     <>  
       <Navbar />
-      <section className="flex flex-col bg-slate-50 items-center pt-16 md:pt-24 px-4 overflow-hidden">
+      <section className="flex flex-col bg-slate-50 items-center pt-16 md:pt-24 px-4 overflow-hidden pb-20 md:pb-30">
         <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif text-black mb-12 md:mb-20 tracking-tighter">Browse everything</h1>
         <div className="relative w-full max-w-7xl mx-auto">
           <div className="absolute bottom-0 w-full h-[80%] bg-[#8FA877] rounded-[2.5rem] md:rounded-[4rem] z-0"></div>
-          <div className="relative z-10 flex justify-center pt-10 md:pt-16 px-6 pb-0">
+          <div className="relative z-1 flex justify-center pt-10 md:pt-16 px-6 pb-0">
             <div className="bg-black p-2 md:p-3 rounded-4xl shadow-2xl">
               <img src="/tablet-image.jpg" alt="Dashboard" className="rounded-[1.5rem] w-full max-w-5xl h-auto object-cover border border-gray-800"/>
             </div>
           </div>
         </div>
       </section>
-      <main className="min-h-screen bg-slate-50 p-10 flex flex-col items-center gap-8">
-        <h1 className="text-3xl font-bold text-slate-900">Katalog Produk</h1>
+      {/* Benefits */}
+      <section className="flex flex-col bg-slate-50 text-black pt-5">
+        <div className="flex flex-col border-t pt-15 border-b pb-15 gap-10 px-6">
+          <h3 className="font-mono text-[70%] tracking-tight">Benefits</h3>
+          <h1 className="font-serif text-5xl sm:text-6xl tracking-wide">We've cracked the code.</h1>
+          <h3 className="font-mono text-[80%] tracking-tight">Area provides real insights, without the data overload.</h3>
+        </div>
+        <div className="border-b py-15 px-10">
+          <ol className="list-decimal grid grid-cols-2 sm:grid-cols-4 gap-10">
+            <li className="font-bold">
+              <h3 className="font-serif tracking-tight">Amplify Insight</h3>
+              <p className="font-mono text-[80%] font-normal tracking-tight">Unlock data-driven decisions with comprehensive analytics, revealing key opportunities for strategic regional growth</p>
+            </li>
+            <li className="font-bold">
+              <h3 className="font-serif tracking-tight">Amplify Insight</h3>
+              <p className="font-mono text-[80%] font-normal tracking-tight">Unlock data-driven decisions with comprehensive analytics, revealing key opportunities for strategic regional growth</p>
+            </li>
+            <li className="font-bold">
+              <h3 className="font-serif tracking-tight">Amplify Insight</h3>
+              <p className="font-mono text-[80%] font-normal tracking-tight">Unlock data-driven decisions with comprehensive analytics, revealing key opportunities for strategic regional growth</p>
+            </li>
+            <li className="font-bold">
+              <h3 className="font-serif tracking-tight">Amplify Insight</h3>
+              <p className="font-mono text-[80%] font-normal tracking-tight">Unlock data-driven decisions with comprehensive analytics, revealing key opportunities for strategic regional growth</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <main className="bg-slate-50 p-10 flex flex-col items-center gap-8">
+        <h1 className="text-3xl text-black tracking-tighter font-serif ">Katalog Produk</h1>
         <div className="flex flex-row gap-8">
           <ProductCard
             image="/img1.jpg"
