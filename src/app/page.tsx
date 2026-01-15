@@ -136,7 +136,7 @@ export default function ShopPage(){
   return(
     <>  
       <Navbar />
-      <section className="flex flex-col bg-slate-50 items-center pt-16 md:pt-24 px-4 overflow-hidden pb-20 md:pb-30">
+      <section className="flex flex-col bg-slate-50 items-center pt-16 md:pt-24 px-4 overflow-hidden pb-20 md:pb-30 min-h-screen">
         <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif text-black mb-12 md:mb-20 tracking-tighter">Browse everything</h1>
         <div className="relative w-full max-w-7xl mx-auto">
           <div className="absolute bottom-0 w-full h-[80%] bg-[#8FA877] rounded-[2.5rem] md:rounded-[4rem] z-0"></div>
@@ -148,34 +148,75 @@ export default function ShopPage(){
         </div>
       </section>
       {/* Benefits */}
-      <section className="flex flex-col bg-slate-50 text-black pt-5">
+      <section className="flex flex-col bg-slate-50 text-black min-h-screen">
         <div className="flex flex-col border-t pt-15 border-b pb-15 gap-10 px-6">
           <h3 className="font-mono text-[70%] tracking-tight">Benefits</h3>
           <h1 className="font-serif text-5xl sm:text-6xl tracking-wide">We've cracked the code.</h1>
           <h3 className="font-mono text-[80%] tracking-tight">Area provides real insights, without the data overload.</h3>
         </div>
         <div className="border-b py-15 px-10">
-          <ol className="list-decimal grid grid-cols-2 sm:grid-cols-4 gap-10">
+          <ol className="list-decimal grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
             <li className="font-bold">
               <h3 className="font-serif tracking-tight">Amplify Insight</h3>
               <p className="font-mono text-[80%] font-normal tracking-tight">Unlock data-driven decisions with comprehensive analytics, revealing key opportunities for strategic regional growth</p>
             </li>
             <li className="font-bold">
-              <h3 className="font-serif tracking-tight">Amplify Insight</h3>
-              <p className="font-mono text-[80%] font-normal tracking-tight">Unlock data-driven decisions with comprehensive analytics, revealing key opportunities for strategic regional growth</p>
+              <h3 className="font-serif tracking-tight">Control Your Global Presence</h3>
+              <p className="font-mono text-[80%] font-normal tracking-tight">Manage and track satelite officers, ensuring consistent performance and steramlined operations everywhere.</p>
             </li>
             <li className="font-bold">
-              <h3 className="font-serif tracking-tight">Amplify Insight</h3>
-              <p className="font-mono text-[80%] font-normal tracking-tight">Unlock data-driven decisions with comprehensive analytics, revealing key opportunities for strategic regional growth</p>
+              <h3 className="font-serif tracking-tight">Remove Language Barriers</h3>
+              <p className="font-mono text-[80%] font-normal tracking-tight">Adapt to diverse markets with built-in localization for clear communication and enhanced user experience</p>
             </li>
             <li className="font-bold">
-              <h3 className="font-serif tracking-tight">Amplify Insight</h3>
-              <p className="font-mono text-[80%] font-normal tracking-tight">Unlock data-driven decisions with comprehensive analytics, revealing key opportunities for strategic regional growth</p>
+              <h3 className="font-serif tracking-tight">Visualize Growth</h3>
+              <p className="font-mono text-[80%] font-normal tracking-tight">Generate precise, visually complling reports that illustrate your growth trajectories across all regions</p>
             </li>
           </ol>
         </div>
       </section>
-      <main className="bg-slate-50 p-10 flex flex-col items-center gap-8">
+      {/* Benefits2 */}
+      <section className="grid grid-cols-1 md:grid-cols-2 bg-slate-50 text-black py-15 min-h-screen">
+        <div className="flex flex-col items-center px-10">
+        {/* Kata-Kata */}
+          <div className="flex flex-col gap-10">
+            <h1 className="font-serif text-5xl tracking-wide">See the Big Picture</h1>
+            <p className="font-mono text-[80%]">Area turns your data into clear, vibrant visuals that show you exactly what's happening in each region</p>
+          </div>
+        {/* List Container*/}
+          <div className="pt-10 px-4">
+            {/* item */}
+            <ol className="list-decimal grid grid-rows-4 border-t gap-5 mb-10 border-b">
+              <li className="border-b">
+                <h3 className="font-mono text-[80%]">Spot Trends in Seconds: No more digging through numbers.</h3>
+              </li>
+              <li className="border-b">
+                <h3 className="font-mono text-[80%]">Get Everyone on the Same Page: Share easy-to-undestand reports with your team.</h3>
+              </li>
+              <li className="border-b">
+                <h3 className="font-mono text-[80%]">Make Presentations Pop: Interactive maps and dashboards keep your audience engaged</h3>
+              </li>
+              <li>
+                <h3 className="font-mono text-[80%]">Your Global Snapshot: Get a quick, clear overview of your entire operation</h3>
+              </li>
+            </ol>
+          <button className="bg-[#8FA877] rounded-4xl p-2 font-serif tracking-tight px-4 cursor-pointer text-white">Discover More</button>
+          </div>
+        </div>
+        {/* gambar */}
+        <div className="pt-10 flex mx-auto">
+          <img src="" alt="content.jpg"/>
+        </div>
+      </section>
+      {/* Connect With Us */}
+      <section className="min-h-screen bg-slate-50">
+        <div className="flex flex-col items-center w-full bg-slate-50 text-black gap-10 text-center px-20 pb-20 pt-20">
+          <h1 className="font-serif text-5xl tracking-wide ">Connect with us</h1>
+          <p className="font-mono tracking-tighter font-extralight">Schedule a quick call to learn how to Area can turn your regional data into a powerful advantage.</p>
+          <button className="w-full sm:w-xl bg-[#8FA877] rounded-4xl p-2 font-serif tracking-tight px-4 cursor-pointer text-white">Learn More</button>
+        </div>
+      </section>
+      {/* <main className="bg-slate-50 p-10 flex flex-col items-center gap-8">
         <h1 className="text-3xl text-black tracking-tighter font-serif ">Katalog Produk</h1>
         <div className="flex flex-row gap-8">
           <ProductCard
@@ -194,7 +235,7 @@ export default function ShopPage(){
             price="Rp 1.500.000"
           />
         </div>
-      </main>
+      </main> */}
     </>
   )
 }
