@@ -12,7 +12,7 @@ export default function Navbar(){
             <div>
               <h1 className="hidden sm:flex tracking-tighter font-serif text-black text-2xl">Area</h1>
             </div>
-            <div className="hidden sm:flex flex-row gap-4 font-bold fixed top-7 left-1/2 -translate-x-1/2 z-10 rounded-2xl  backdrop-brightness-150 backdrop-blur-sm shadow-sm p-2 font-serif text-black tracking-tight font">
+            <div className="hidden sm:flex flex-row gap-4 font-bold fixed top-7 left-1/2 -translate-x-1/2 z-10 rounded-2xl  backdrop-brightness-200 backdrop-blur-sm shadow-sm p-2 font-serif text-black tracking-tight font">
               <a className="hover:text-green-600 text-[75%]" href="#">Benefits</a>
               <a className="hover:text-green-600 text-[75%]" href="#">Spesifications</a>
               <a className="hover:text-green-600 text-[75%]" href="#">How-to</a>
