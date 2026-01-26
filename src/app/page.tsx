@@ -133,6 +133,7 @@ import ProductCard from "../components/ProductCard";
 import Navbar from "../components/Navbar";
 
 export default function ShopPage(){
+  const items = [1,2,3,4,5,6];
   return(
     <>  
       <Navbar />
@@ -214,6 +215,27 @@ export default function ShopPage(){
           <h1 className="font-serif text-5xl tracking-wide ">Connect with us</h1>
           <p className="font-mono tracking-tighter font-extralight">Schedule a quick call to learn how to Area can turn your regional data into a powerful advantage.</p>
           <button className="w-full sm:w-xl bg-[#8FA877] rounded-4xl p-2 font-serif tracking-tight px-4 cursor-pointer text-white">Learn More</button>
+        </div>
+      </section>
+      {/* Jika ingin carousel yang bisa di slide */}
+      <section>
+        <div className="w-full py-10">
+          <h2 className="text-2xl font-bold mb-6 px-6 text-center">Fitur Unggulan</h2>
+          {/* 1. TEROWONGAN (Parent Container) */}
+          {/* overflow-x-auto: Aktifkan scroll samping */}
+          {/* snap-x: Biar saat discroll dia 'nempel' (magnet) pas di tengah kartu */}
+          {/* no-scrollbar: (Opsional) class buatan untuk sembunyikan batang scroll */}
+          <div className="flex gap-6 overflow-x-auto px-6 pb-8 w-full">
+            {items.map(item => (
+              // 2. GERBONG KERETA (Child Item)
+              // min-w... KUNCI UTAMA! Tentukan lebar fix-kartu. Jangan pakai w-full
+              // flex-shrink-0: "JANGAN GENCET AKU!", Agar kartu tidak mengecil paksa
+              // snap-center: Magnet di tengah kartu
+              <div key={item} className="min-w-75 h-100 bg-slate-800 rounded-2xl shrink-0 shadow-xl flex items-center justify-center text-white text-3xl font-bold border border-slate-700 hover:scale-105 transition duration-300">
+                Card {item}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
       {/* <main className="bg-slate-50 p-10 flex flex-col items-center gap-8">
